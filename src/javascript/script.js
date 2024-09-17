@@ -4,12 +4,12 @@ document.querySelector("#search").addEventListener("submit", (event) => {
   const cityname = document.querySelector("#city_name").value;
 
   if (!cityname) {
-    return alert("Você precisa digitar uma cidade...");
+    return showalert("Você precisa digitar uma cidade...");
   }
 
   console.log(cityname);
 });
 
 function showalert(msg) {
-  document.querySelector("alert");
+  document.querySelector("#alert").innerHTML = msg;
 }
